@@ -1,0 +1,48 @@
+$color-very-dark-blue-1:#3a4764;
+$color-very-dark-blue-2:#232c43;
+$color-very-dark-blue-3:#182034;
+$color-dark-blue-1:#637097;
+$color-dark-blue-2:#404e72;
+$color-red:#d03f2f;
+$color-red-hover:#d96659;
+
+$color-dark-red:#93261a;
+
+$color-light-grayish-orange:#eae3dc;
+$color-grayish-orange:#b4a597;
+$color-very-dark-grayish-blue:#434A59;
+$color-black:hsl(0, 0, 100%);
+$color-light-gray:#e6e6e6;
+$color-grayish-red:#d1cccc;
+$color-very-light-gray:#ededed;
+$color-dark-moderate-cyan:#377f86;
+$color-very-dark-cyan:#1b5f65;
+$color-orange:#ca5502;
+$color-dark-orange:#893901;
+$color-light-grayish-yellow:#e5e4e1;
+$color-dark-grayish-orange:#a69d91;
+$color-very-dark-gryaish-yellow:#35352c;
+// $color-very-dark-violet-1:hsl(268, 74%, 9%);
+$color-very-dark-violet-2:#341c4f;
+$color-dark-violet:hsl(281, 89%, 26%);
+$color-vivid-magenta:#bc15f4;
+$color-pure-cyan:hsl(176, 100%, 44%);
+$color-soft-cyan: #6cf9f2;
+$color-light-yellow:#ffe53d;
+$color-very-dark-blue: #1b2428;
+$color-white:#fff;
+$color-display-background:#181F33;
+$color-main-background:#242D44;
+
+@mixin keys-design {
+        font-size: 3.2rem;
+        font-family: inherit;
+        color: $color-main-background;
+        background-color: $color-light-grayish-orange;
+        border: none;
+        border-radius: 1rem;
+        padding: 2rem 0 1.5rem 0;
+        cursor: pointer;
+        box-shadow: 0 0.5rem 0.2rem $color-grayish-orange ;
+}
+

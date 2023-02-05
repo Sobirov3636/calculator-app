@@ -1,0 +1,363 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 63.5%; }
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #637097; }
+
+.container {
+  height: 70rem;
+  width: 54rem;
+  grid-template-columns: repeat(1fr 6);
+  margin: auto;
+  margin-top: 5rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__calc {
+    text-transform: lowercase;
+    font-size: 3.2rem;
+    color: #ededed;
+    color: #fff; }
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column; }
+  .box__theme {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 3rem; }
+  .box__num {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 2 / 2;
+    grid-row: 1 /1;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #fff; }
+    .box__num-1 {
+      cursor: pointer; }
+    .box__num-2 {
+      cursor: pointer; }
+    .box__num-3 {
+      cursor: pointer; }
+  .box__span {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 2.3rem;
+    width: 6rem;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    border-radius: 1.5rem;
+    background-color: #181F33; }
+    .box__span-child {
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 5rem;
+      background-color: #d03f2f;
+      display: none;
+      cursor: pointer; }
+      .box__span-child--1 {
+        grid-column: 1/2; }
+      .box__span-child--2 {
+        grid-column: 2/3; }
+      .box__span-child--3 {
+        grid-column: 3/4; }
+    .box__span .active {
+      display: block; }
+
+.display__result {
+  width: 100%;
+  height: 10rem;
+  padding: 2rem 2rem 3rem 2rem;
+  margin: 2rem 0 2rem 0;
+  border: none;
+  border-radius: 1rem;
+  background-color: #181F33;
+  color: #fff;
+  font-size: 4.8rem;
+  text-align: end; }
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  background-color: #242D44;
+  padding: 2rem;
+  border-radius: 1rem; }
+  .main__key-7 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-7:hover {
+    background-color: #fff; }
+  .main__key-8 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-8:hover {
+    background-color: #fff; }
+  .main__key-9 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-9:hover {
+    background-color: #fff; }
+  .main__key-del {
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: #fff;
+    background-color: #404e72;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #182034; }
+  .main__key-del:hover {
+    background-color: #637097; }
+  .main__key-4 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-4:hover {
+    background-color: #fff; }
+  .main__key-5 {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-5:hover {
+    background-color: #fff; }
+  .main__key-6 {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-6:hover {
+    background-color: #fff; }
+  .main__key-add {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-add:hover {
+    background-color: #fff; }
+  .main__key-1 {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-1:hover {
+    background-color: #fff; }
+  .main__key-2 {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-2:hover {
+    background-color: #fff; }
+  .main__key-3 {
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-3:hover {
+    background-color: #fff; }
+  .main__key-sub {
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-sub:hover {
+    background-color: #fff; }
+  .main__key-dot {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-dot:hover {
+    background-color: #fff; }
+  .main__key-0 {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-0:hover {
+    background-color: #fff; }
+  .main__key-divide {
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-divide:hover {
+    background-color: #fff; }
+  .main__key-multi {
+    grid-column: 4 / 4;
+    grid-row: 4 / 4;
+    font-size: 3.2rem;
+    font-family: inherit;
+    color: #242D44;
+    background-color: #eae3dc;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #b4a597; }
+  .main__key-multi:hover {
+    background-color: #fff; }
+  .main__key-reset {
+    grid-column: 1/ 3;
+    grid-row: 5 / 5;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: #fff;
+    background-color: #404e72;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #182034; }
+  .main__key-reset:hover {
+    background-color: #637097; }
+  .main__key-equal {
+    grid-column: 3 / 5;
+    grid-row: 5 / 5;
+    font-size: 2rem;
+    font-family: inherit;
+    color: #fff;
+    background-color: #d03f2f;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem 0 1.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 0.2rem #93261a; }
+  .main__key-equal:hover {
+    background-color: #d96659; }
+
+.dark:hover {
+  background-color: #bc15f4; }
